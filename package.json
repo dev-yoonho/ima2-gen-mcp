@@ -1,0 +1,26 @@
+{
+  "name": "ima2-gen-mcp",
+  "version": "0.2.0",
+  "description": "MCP adapter for ima2-gen with stdio and remote HTTP modes",
+  "type": "module",
+  "bin": {
+    "ima2-gen-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', 0o755)\"",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ima2-gen": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/ima2-gen-mcp/build/index.js"],
+      "env": {
+        "IMA2_MCP_AUTO_START": "1"
+      }
+    }
+  }
+}
